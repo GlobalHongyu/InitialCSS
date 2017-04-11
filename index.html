@@ -1,0 +1,64 @@
+<!DOCTYPE HTML>
+<html>
+ <head>
+  <title> New Document </title>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus">
+   <style>
+  body{
+       font:30px "microsoft yahei",Arial,Helvetica,sans-serif;
+	   color:#666;
+       margin:0;
+	   padding:0;
+	   height:3000px;
+	}
+  #background{
+          margin:0;
+		  padding:0;
+          width:100%;
+		  height:100%;
+		  position:fixed;
+		  z-index:-1;
+		  }
+   .background_1{
+       position:absolute;
+       left:-30%;top:-55%;z-index:-1;
+	   transform-origin:50% 50%;
+       transition:all 2s ease-in-out;
+	   transform:rotateZ(0deg);
+	   /*-webkit-animation:back 30s linear  infinite;*/
+   }
+   .background_1{}
+  </style>
+  <link rel="Stylesheet" href="CSS/zp.css"/>
+  <script>
+     var calh=window.innerHeight;
+	 var calw=window.innerWidth;
+     document.styleSheets[0].cssRules[2].style.width=calw*2+"px";
+	 document.styleSheets[0].cssRules[2].style.height=calw*2+"px";
+  </script>
+ </head>
+ <body>
+ <header id="header">
+   <ul>
+      <li>首页</li>
+      <li>个人介绍</li>
+      <li>其他信息</li>
+   </ul>
+ </header>
+    <div id="background">
+	<img src="img/img881.jpg" class="background_1">
+	</div>
+    <div  id="cal">
+    <div class="cal_box">
+    <div  id="cal_img1"><img src="img/img1.jpg"class="cal1"></div>
+	<div  id="cal_img2"><img src="img/img2.jpg"class="cal2"></div>
+	<div  id="cal_img3"><img src="img/img3.jpg" class="cal3"></div>
+	<div  id="cal_img4"><img src="img/img4.jpg" class="cal4"></div>
+	<div  id="cal_img5"><img src="img/img5.jpg"class="cal5"></div>
+	</div>
+    </div>
+  <script src="JS/jquery-1.12.4.js"></script>
+  <script src="JS/zp.js"></script>
+ </body>
+</html>
